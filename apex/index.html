@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Climate Action Hub | SDG Hackathon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Landing Page -->
+    <section class="landing" id="landing">
+        <div class="particles" id="particles"></div>
+        <div class="landing-content">
+            <h1 class="animate-text">Ultimate Climate Action Hub</h1>
+            <p class="animate-text">Join the global movement to combat climate change with our all-in-one platform for tracking, learning, and acting sustainably.</p>
+            <button class="cta-button" onclick="scrollToMain()">Get Started Now</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-earth-americas"></i> Ultimate Climate Action Hub</h1>
+            <p class="subtitle">Track your impact, learn sustainable practices, and take action for a greener future!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('dashboard')">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+            </button>
+            <button class="tab-btn" onclick="openTab('composting')">
+                <i class="fas fa-recycle"></i> Composting
+            </button>
+            <button class="tab-btn" onclick="openTab('recipes')">
+                <i class="fas fa-utensils"></i> Eco Recipes
+            </button>
+            <button class="tab-btn" onclick="openTab('energy')">
+                <i class="fas fa-solar-panel"></i> Energy
+            </button>
+            <button class="tab-btn" onclick="openTab('actions')">
+                <i class="fas fa-seedling"></i> Actions
+            </button>
+            <button class="tab-btn" onclick="openTab('community')">
+                <i class="fas fa-users"></i> Community
+            </button>
+        </div>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="dashboard">
+                <!-- Carbon Footprint Calculator -->
+                <div class="card">
+                    <h2><i class="fas fa-shoe-prints card-icon"></i> Carbon Footprint</h2>
+                    <p>Calculate your personal carbon emissions and compare with averages.</p>
+                    
+                    <div class="input-group">
+                        <label for="transport">Monthly km traveled by car:</label>
+                        <input type="number" id="transport" placeholder="e.g. 300" aria-label="Monthly car travel in kilometers">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="electricity">Monthly electricity usage (kWh):</label>
+                        <input type="number" id="electricity" placeholder="e.g. 200" aria-label="Monthly electricity usage in kWh">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="diet">Diet type:</label>
+                        <select id="diet" aria-label="Select diet type">
+                            <option value="meatDaily">Meat daily</option>
+                            <option value="meatWeekly">Meat weekly</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                        </select>
+                    </div>
+                    
+                    <button onclick="calculateFootprint()">Calculate</button>
+                    
+                    <div id="footprintResult" style="display: none;">
+                        <div class="data-display" id="carbonValue">0</div>
+                        <p>kg CO2 per month</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="carbonProgress"></div>
+                        </div>
+                        <p id="carbonMessage"></p>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="footprintChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Climate Data -->
+                <div class="card">
+                    <h2><i class="fas fa-globe-americas card-icon"></i> Climate Data</h2>
+                    <p>Current atmospheric CO2 levels and global temperature anomaly.</p>
+                    
+                    <div class="data-display loading" id="co2Level">
+                        <span>Loading</span>
+                        <span class="spinner"></span>
+                    </div>
+                    <p>ppm (parts per million)</p>
+                    
+                    <div class="data-display loading" id="tempAnomaly">
+                        <span>Loading</span>
+                        <span class="spinner"></span>
+                    </div>
+                    <p>°C above pre-industrial levels</p>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="climateProgress" style="width: 80%; background: var(--warning);"></div>
+                    </div>
+                    <p>We need to stay below 1.5°C warming</p>
+                    
+                    <button onclick="refreshClimateData()">Refresh Data</button>
+                </div>
+                
+                <!-- Action Tips -->
+                <div class="card">
+                    <h2><i class="fas fa-lightbulb card-icon"></i> Quick Actions</h2>
+                    <p>Simple changes you can make today.</p>
+                    
+                    <div id="tipsContainer">
+                        <div class="tip-card" onclick="openTab('composting')" style="cursor: pointer;">
+                            <h3><i class="fas fa-recycle"></i> Start Composting</h3>
+                            <p>Reduce food waste by 30% with our easy guide.</p>
+                        </div>
+                        
+                        <div class="tip-card" onclick="openTab('recipes')" style="cursor: pointer;">
+                            <h3><i class="fas fa-leaf"></i> Try a Plant-Based Meal</h3>
+                            <p>Check out our delicious eco-friendly recipes.</p>
+                        </div>
+                    </div>
+                    
+                    <button onclick="generateNewTip()">Get Another Tip</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Composting Guide Tab -->
+        <div id="composting" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-recycle card-icon"></i> DIY Composting Guide</h2>
+                <p>Turn your food scraps into nutrient-rich soil with these simple steps.</p>
+                
+                <div class="composting-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Choose Your Compost Bin</h3>
+                            <p>You can use a store-bought bin or make your own from wood pallets or plastic containers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>Balance Green & Brown Materials</h3>
+                            <p><strong>Greens (Nitrogen-rich):</strong> Fruit/veggie scraps, coffee grounds, fresh grass clippings<br>
+                            <strong>Browns (Carbon-rich):</strong> Dry leaves, cardboard, newspaper, wood chips</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Layer Your Materials</h3>
+                            <p>Start with browns, add greens, and keep a 3:1 ratio (browns to greens).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3>Maintain Your Pile</h3>
+                            <p>Turn the pile every 1-2 weeks to aerate. It should feel like a damp sponge.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div>
+                            <h3>Harvest Your Compost</h3>
+                            <p>In 2-6 months, you'll have dark, crumbly compost ready for your garden!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 1.2rem;">What You Can Compost</h3>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; max-width: 100%;">
+                    <div class="tip-card" style="background-color: rgba(230,250,235,0.8);">
+                        <h3><i class="fas fa-check-circle" style="color: var(--primary);"></i> DO Compost</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li>Fruit & vegetable scraps</li>
+                            <li>Eggshells</li>
+                            <li>Coffee grounds & filters</li>
+                            <li>Tea bags</li>
+                            <li>Yard trimmings</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card" style="background-color: rgba(255,241,240,0.8);">
+                        <h3><i class="fas fa-times-circle" style="color: var(--danger);"></i> DON'T Compost</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li>Meat or dairy</li>
+                            <li>Fats/oils</li>
+                            <li>Diseased plants</li>
+                            <li>Pet waste</li>
+                            <li>Coal/charcoal</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button onclick="window.open('https://www.epa.gov/recycle/composting-home', '_blank')">
+                    <i class="fas fa-external-link-alt"></i> Learn More from EPA
+                </button>
+            </div>
+        </div>
+
+        <!-- Eco Recipes Tab -->
+        <div id="recipes" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-utensils card-icon"></i> Eco-Friendly Recipe Generator</h2>
+                <p>Discover delicious plant-based meals that reduce your carbon footprint.</p>
+                
+                <div class="input-group">
+                    <label for="ingredients">What ingredients do you have? (comma separated)</label>
+                    <input type="text" id="ingredients" placeholder="e.g. tomatoes, lentils, rice" aria-label="Enter ingredients">
+                </div>
+                
+                <div class="input-group">
+                    <label for="dietary">Dietary Preference:</label>
+                    <select id="dietary" aria-label="Select dietary preference">
+                        <option value="all">All</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="glutenFree">Gluten-Free</option>
+                    </select>
+                </div>
+                
+                <button onclick="generateRecipe()"><i class="fas fa-search"></i> Find Recipes</button>
+                
+                <div id="recipeResults"></div>
+            </div>
+        </div>
+
+        <!-- Energy Simulator Tab -->
+        <div id="energy" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-solar-panel card-icon"></i> Renewable Energy Simulator</h2>
+                <p>See how solar panels could power your home and reduce your carbon footprint.</p>
+                
+                <div class="input-group">
+                    <label for="homeSize">Home size (m²):</label>
+                    <input type="number" id="homeSize" value="100" aria-label="Home size in square meters">
+                </div>
+                
+                <div class="input-group">
+                    <label for="location">Location:</label>
+                    <select id="location" aria-label="Select location">
+                        <option value="sunny">Sunny (e.g. California)</option>
+                        <option value="moderate">Moderate (e.g. New York)</option>
+                        <option value="cloudy">Cloudy (e.g. Seattle)</option>
+                    </select>
+                </div>
+                
+                <button onclick="runEnergySimulation()">Simulate</button>
+                
+                <div class="simulator-result" id="simulatorResult" style="display: none;">
+                    <p>With solar panels covering <span id="panelArea">0</span> m² of your roof:</p>
+                    <div class="data-display" id="energyProduced">0</div>
+                    <p>kWh per month generated</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="energyProgress"></div>
+                    </div>
+                    <p id="energyMessage"></p>
+                </div>
+                
+                <div class="tip-card" style="margin-top: 1.5rem;">
+                    <h3><i class="fas fa-lightbulb"></i> Did You Know?</h3>
+                    <p>The average US home uses about 900 kWh per month. Switching to solar can reduce your carbon footprint by 3-4 tons annually!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Take Action Tab -->
+        <div id="actions" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-seedling card-icon"></i> Take Climate Action</h2>
+                <p>Join challenges and track your sustainable actions.</p>
+                
+                <div class="input-group">
+                    <label>Select a 30-Day Challenge:</label>
+                    <select id="challengeSelect" aria-label="Select a challenge">
+                        <option value="meatFree">Meat-Free Days</option>
+                        <option value="zeroWaste">Zero Waste Week</option>
+                        <option value="energySave">Energy Saver</option>
+                        <option value="treePlant">Tree Planting</option>
+                    </select>
+                </div>
+                
+                <button onclick="startChallenge()">Start Challenge</button>
+                
+                <div id="challengeTracker" style="margin-top: 1.5rem; display: none;">
+                    <h3>Your Progress</h3>
+                    <div class="progress-container" style="height: 18px;">
+                        <div class="progress-bar" id="challengeProgress" style="height: 100%;"></div>
+                    </div>
+                    <p id="challengeStatus">Day 1 of 30</p>
+                    
+                    <div id="challengeActions" style="margin-top: 0.8rem;"></div>
+                </div>
+                
+                <div class="tip-card" style="margin-top: 1.5rem;">
+                    <h3><i class="fas fa-award"></i> Local Climate Actions</h3>
+                    <p>Find events and initiatives in your area:</p>
+                    <div class="input-group">
+                        <label for="eventLocation">Your Location:</label>
+                        <input type="text" id="eventLocation" placeholder="e.g. New York" aria-label="Enter your location">
+                    </div>
+                    <button onclick="findLocalEvents()">Find Events</button>
+                    <div id="eventResults" style="margin-top: 0.8rem;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Tab -->
+        <div id="community" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-users card-icon"></i> Community Leaderboard</h2>
+                <p>Compete with others and track your impact!</p>
+                
+                <div id="leaderboard" style="margin-top: 0.8rem;"></div>
+                
+                <button onclick="joinLeaderboard()" style="margin-top: 0.8rem;">Join Leaderboard</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Made for the UN SDG Hackathon</p>
+            <p>© 2025 Ultimate Climate Action Hub | Contributing to UN Sustainable Development Goals</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
