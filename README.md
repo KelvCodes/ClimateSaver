@@ -1,2 +1,2 @@
 # ClimateSaver
-The Ultimate Climate Action Hub is an interactive web application developed to help, aligning with Sustainable Development Goals (SDGs), particularly SDG 13 (Climate Action). The platform empowers users to track their carbon footprint, explore sustainable practices, and engage in climate-friendly actions.
+The Ultimate Climate Action Hub is an interactive web application developed to help k, aligning with Sustainable Development Goals (SDGs), particularly SDG 13 (Climate Action). The platform empowers users to track their carbon footprint, explore sustainable practices, and engage in climate-friendly actions.
