@@ -1,8 +1,4 @@
--=400');
-
-    // Particle animation (reduced for mobile performance)
-    const particleContainer = document.getElementById('particles');
-    const isMobile = window.innerWidth <= 768;
+nst isMobile = window.innerWidth <= 768;
     const particleCount = isMobile ? 15 : 25;
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
