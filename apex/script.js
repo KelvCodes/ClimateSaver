@@ -1,6 +1,4 @@
 
-    asing: 'easeOutExpo'
-    })
     .add({
         targets: '.landing .letter',
         translateY: [80, 0],
