@@ -1,10 +1,4 @@
-
-    
-    // Animate data display
-    anime({
-        targets: ['#co2Level', '#tempAnomaly'],
-        scale: [0.9, 1],
-        opacity: [0, 1],
+city: [0, 1],
         duration: 600,
         easing: 'easeOutQuad'
     });
