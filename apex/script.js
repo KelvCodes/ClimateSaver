@@ -1,6 +1,5 @@
   
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('active');
+   classList.remove('active');
     });
     
     document.getElementById(tabName).classList.add('active');
