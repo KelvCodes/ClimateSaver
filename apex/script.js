@@ -1,6 +1,4 @@
-s
-pacity: [0, 1],
-        rotate: [10, 0],
+    rotate: [10, 0],
         duration: 600
     }, '-=400');
 
