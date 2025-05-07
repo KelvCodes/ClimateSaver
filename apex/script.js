@@ -1,7 +1,4 @@
-opacity: [0, 1],
-        translateY: [15, 0],
-        duration: 500,
-        easing: 'easeOutQuad'
+    easing: 'easeOutQuad'
     });
 }
 
