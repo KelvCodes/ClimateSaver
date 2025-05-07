@@ -1,5 +1,4 @@
-targets: '.landing .letter',
-        translateY: [80, 0],
+   translateY: [80, 0],
         opacity: [0, 1],
         delay: anime.stagger(40),
         duration: 1000
