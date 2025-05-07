@@ -1,6 +1,4 @@
-   translateY: [80, 0],
-        opacity: [0, 1],
-        delay: anime.stagger(40),
+elay: anime.stagger(40),
         duration: 1000
     })
     .add({
