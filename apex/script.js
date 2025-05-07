@@ -1,6 +1,4 @@
-    rotate: [10, 0],
-        duration: 600
-    }, '-=400');
+-=400');
 
     // Particle animation (reduced for mobile performance)
     const particleContainer = document.getElementById('particles');
