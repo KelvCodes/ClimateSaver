@@ -1,8 +1,4 @@
-    easing: 'easeOutQuad'
-    });
-}
-
-// Scroll to Main Content
+Scroll to Main Content
 function scrollToMain() {
     document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
 }
