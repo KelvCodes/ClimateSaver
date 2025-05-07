@@ -1,7 +1,5 @@
 Scroll to Main Content
 function scrollToMain() {
-    document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-}
 
 // Climate Data
 async function fetchClimateData() {
