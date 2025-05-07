@@ -1,6 +1,5 @@
 
-    anime.timeline({
-        easing: 'easeOutExpo'
+    asing: 'easeOutExpo'
     })
     .add({
         targets: '.landing .letter',
