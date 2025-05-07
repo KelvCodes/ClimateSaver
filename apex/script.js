@@ -1,7 +1,4 @@
 
-    document.getElementById(tabName).classList.add('active');
-    document.querySelector(`button[onclick="openTab('${tabName}')"]`).classList.add('active');
-    
     // Animate tab content
     anime({
         targets: `#${tabName}`,
