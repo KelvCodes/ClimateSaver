@@ -1,7 +1,4 @@
-m
-    const tempAnomaly = 1.1 + (Math.random() * 0.1 - 0.05);
-    document.getElementById('tempAnomaly').textContent = tempAnomaly.toFixed(2);
-    
+
     const progressPercent = (tempAnomaly / 1.5) * 100;
     document.getElementById('climateProgress').style.width = `${progressPercent}%`;
     
