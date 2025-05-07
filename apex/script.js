@@ -1,5 +1,4 @@
-   title.innerHTML = title.textContent.replace(/\S/g, '<span class="letter">$&</span>');
-    
+
     anime.timeline({
         easing: 'easeOutExpo'
     })
