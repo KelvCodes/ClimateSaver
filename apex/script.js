@@ -1,6 +1,4 @@
-Tab System
-function openTab(tabName) {
-    document.querySelectorAll('.tab-content').forEach(content => {
+   document.querySelectorAll('.tab-content').forEach(content => {
         content.classList.remove('active');
     });
     document.querySelectorAll('.tab-btn').forEach(btn => {
