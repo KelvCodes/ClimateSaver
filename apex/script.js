@@ -1,5 +1,4 @@
- opacity: [0, 1],
-        duration: 800
+    duration: 800
     }, '-=600')
     .add({
         targets: '.cta-button',
