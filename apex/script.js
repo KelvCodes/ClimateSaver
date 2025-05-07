@@ -1,7 +1,4 @@
-
-  window.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 15;
-            const y = (e.clientY / window.innerHeight - 0.5) * 15;
+     const y = (e.clientY / window.innerHeight - 0.5) * 15;
             document.querySelector('.landing-content').style.transform = `translate(${x}px, ${y}px)`;
         });
     }
