@@ -1,8 +1,4 @@
-
-    }
-});
-
-// Tab System
+Tab System
 function openTab(tabName) {
     document.querySelectorAll('.tab-content').forEach(content => {
         content.classList.remove('active');
