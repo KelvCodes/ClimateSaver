@@ -1,5 +1,5 @@
-    scale: [0, 1],
-        opacity: [0, 1],
+s
+pacity: [0, 1],
         rotate: [10, 0],
         duration: 600
     }, '-=400');
