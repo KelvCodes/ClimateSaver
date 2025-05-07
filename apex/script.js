@@ -1,6 +1,4 @@
-mpAnomaly > 1.5) {
-        document.getElementById('climateProgress').style.background = 'var(--danger)';
-    }
+
     
     // Animate data display
     anime({
