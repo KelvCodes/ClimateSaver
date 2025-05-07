@@ -1,6 +1,4 @@
-particle.style.animationDelay = `${Math.random() * 8}s`;
-        particleContainer.appendChild(particle);
-    }
+
 
     // Simplified parallax for mobile
     if (!isMobile) {
