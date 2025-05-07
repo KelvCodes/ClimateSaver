@@ -1,5 +1,4 @@
-  particle.style.left = `${Math.random() * 100}%`;
-        particle.style.animationDelay = `${Math.random() * 8}s`;
+particle.style.animationDelay = `${Math.random() * 8}s`;
         particleContainer.appendChild(particle);
     }
 
