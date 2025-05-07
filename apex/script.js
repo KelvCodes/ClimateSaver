@@ -1,8 +1,4 @@
-ment.getElementById('tempAnomaly').innerHTML = '';
-    
-    const currentCO2 = 420 + (Math.random() * 0.5 - 0.25);
-    document.getElementById('co2Level').textContent = currentCO2.toFixed(1);
-    
+m
     const tempAnomaly = 1.1 + (Math.random() * 0.1 - 0.05);
     document.getElementById('tempAnomaly').textContent = tempAnomaly.toFixed(2);
     
