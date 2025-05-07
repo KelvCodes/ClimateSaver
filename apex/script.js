@@ -1,8 +1,4 @@
-
-    // Animate tab content
-    anime({
-        targets: `#${tabName}`,
-        opacity: [0, 1],
+opacity: [0, 1],
         translateY: [15, 0],
         duration: 500,
         easing: 'easeOutQuad'
