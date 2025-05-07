@@ -1,9 +1,4 @@
-Scroll to Main Content
-function scrollToMain() {
-
-// Climate Data
-async function fetchClimateData() {
-    document.getElementById('co2Level').classList.remove('loading');
+ocument.getElementById('co2Level').classList.remove('loading');
     document.getElementById('tempAnomaly').classList.remove('loading');
     document.getElementById('co2Level').innerHTML = '';
     document.getElementById('tempAnomaly').innerHTML = '';
