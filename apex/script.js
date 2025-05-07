@@ -1,5 +1,4 @@
-cument.addEventListener('DOMContentLoaded', () => {
-    // Split text for staggered animation
+// Split text for staggered animation
     const title = document.querySelector('.landing h1');
     title.innerHTML = title.textContent.replace(/\S/g, '<span class="letter">$&</span>');
     
