@@ -1,8 +1,4 @@
-
-    const progressPercent = (tempAnomaly / 1.5) * 100;
-    document.getElementById('climateProgress').style.width = `${progressPercent}%`;
-    
-    if (tempAnomaly > 1.5) {
+mpAnomaly > 1.5) {
         document.getElementById('climateProgress').style.background = 'var(--danger)';
     }
     
