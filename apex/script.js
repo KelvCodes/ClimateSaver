@@ -1,7 +1,5 @@
 nst isMobile = window.innerWidth <= 768;
-    const particleCount = isMobile ? 15 : 25;
-    for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
+  const particle = document.createElement('div');
         particle.className = 'particle';
         particle.style.left = `${Math.random() * 100}%`;
         particle.style.animationDelay = `${Math.random() * 8}s`;
