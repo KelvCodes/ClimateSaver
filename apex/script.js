@@ -1,5 +1,5 @@
-// Split text for staggered animation
-    const title = document.querySelector('.landing h1');
+s
+    title = document.querySelector('.landing h1');
     title.innerHTML = title.textContent.replace(/\S/g, '<span class="letter">$&</span>');
     
     anime.timeline({
