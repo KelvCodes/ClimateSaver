@@ -1,6 +1,4 @@
-elay: anime.stagger(40),
-        duration: 1000
-    })
+
     .add({
         targets: '.landing p',
         translateY: [40, 0],
