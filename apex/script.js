@@ -1,15 +1,4 @@
-city: [0, 1],
-        duration: 600,
-        easing: 'easeOutQuad'
-    });
-}
-
-function refreshClimateData() {
-    document.getElementById('co2Level').innerHTML = '<span>Loading</span><span class="spinner"></span>';
-    document.getElementById('tempAnomaly').innerHTML = '<span>Loading</span><span class="spinner"></span>';
-    document.getElementById('co2Level').classList.add('loading');
-    document.getElementById('tempAnomaly').classList.add('loading');
-    setTimeout(fetchClimateData, 1200);
+limateData, 1200);
 }
 
 // Carbon Footprint Calculator
