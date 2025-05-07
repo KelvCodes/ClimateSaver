@@ -1,5 +1,4 @@
-    duration: 800
-    }, '-=600')
+-=600')
     .add({
         targets: '.cta-button',
         scale: [0, 1],
