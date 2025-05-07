@@ -1,6 +1,4 @@
-.add({
-        targets: '.cta-button',
-        scale: [0, 1],
+    scale: [0, 1],
         opacity: [0, 1],
         rotate: [10, 0],
         duration: 600
