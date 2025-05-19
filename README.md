@@ -1,2 +1,2 @@
-# ClimateSaver🌏
+# ClimateSaver🌏🩺
 The Ultimate Climate Action Hub is an interactive web application developed to help keep climate intact in order to sustain human life and it aligns with The UN's Sustainable Development Goals (SDGs), particularly UNSDG 13 (Climate Action). The platform empowers users to track their carbon footprint, explore sustainable practices such as eco-friendly recipes and engage in climate-friendly actions in order to aid sustain the climate for the generations to come.
