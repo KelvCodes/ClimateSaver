@@ -1,6 +1,4 @@
 
-    // Enhanced landing page animations with GSAP for smoother performance
-    gsap.registerPlugin(ScrollTrigger);
     
     // Split text for animation
     const title = document.querySelector('.landing h1');
