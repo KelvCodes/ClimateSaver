@@ -1,6 +1,4 @@
 
-    initTipsSystem();
-    initAccessibility();
     
     // Set up periodic updates
     setupPeriodicUpdates();
