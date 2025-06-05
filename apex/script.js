@@ -1,5 +1,4 @@
-// Enhanced Eco-Friendly Web Application
-document.addEventListener('DOMContentLoaded', () => {
+EventListener('DOMContentLoaded', () => {
     // Initialize all components
     initAnimations();
     initClimateData();
