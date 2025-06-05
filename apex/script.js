@@ -1,6 +1,4 @@
 
-            opacity: 0,
-            duration: 1,
             stagger: 0.04
         })
         .from(".landing p", {
