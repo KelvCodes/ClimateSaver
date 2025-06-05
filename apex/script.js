@@ -1,8 +1,4 @@
-tton", {
-            scale: 0,
-            opacity: 0,
-            rotate: 10,
-            duration: 0.6
+tton",
         }, "-=0.4");
     }
 
