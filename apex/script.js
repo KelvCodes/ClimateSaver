@@ -1,7 +1,4 @@
 
-
-    ini
-    initRecipeGenerator();
     initChallengeSystem();
     initEventFinder();
     initLeaderboard();
