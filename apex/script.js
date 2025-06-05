@@ -1,12 +1,7 @@
 screen
          
         // Handle resize
-        window.addEventListener('resize', () => {
-            canvas.width = container.offsetWidth;
-            canvas.height = container.offsetHeight;
-        });
-    }
-}
+        window.
 
 function initClimateData() {
     // Fetch real climate data from API
