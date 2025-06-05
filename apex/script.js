@@ -1,7 +1,4 @@
 
-    
-    // Set up periodic updates
-    setupPeriodicUpdates();
 });
 
 // ======================
