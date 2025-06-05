@@ -1,8 +1,4 @@
 
-        canvas.height = container.offsetHeight;
-        
-        
-        // Create particles
         for (let i = 0; i < particleCount; i++) {
             particles.push({
                 x: Math.random() * canvas.width,
