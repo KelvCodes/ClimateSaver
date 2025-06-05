@@ -1,8 +1,5 @@
 
-        for (let i = 0; i < particleCount; i++) {
-            particles.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
+        for vas.height,
                 size: Math.random() * 3 + 1,
                 speedX: Math.random() * 1 - 0.5,
                 speedY: Math.random() * 1 - 0.5,
