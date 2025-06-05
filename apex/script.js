@@ -1,5 +1,5 @@
 
-    initClimateData();
+
     initCarbonCalculator();
     initEnergySimulator();
     initRecipeGenerator();
