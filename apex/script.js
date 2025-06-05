@@ -1,5 +1,4 @@
- => {
-    // Initialize all components
+
     initAnimations();
     initClimateData();
     initCarbonCalculator();
