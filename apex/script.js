@@ -1,7 +1,4 @@
 
-        y: (i, target) => -ScrollTrigger.maxScroll(window) * 0.1,
-        ease: "none",
-        scrollTrigger: {
             trigger: ".landing",
             start: "top top",
             end: "bottom top",
