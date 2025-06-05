@@ -1,7 +1,5 @@
 
-    
-    const container = document.querySelector('.landing');
-    if (container) {
+
         container.appendChild(canvas);
         
         const ctx = canvas.getContext('2d');
