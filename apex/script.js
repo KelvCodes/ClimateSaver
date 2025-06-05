@@ -1,5 +1,4 @@
 
-    initLeaderboard();
     initTipsSystem();
     initAccessibility();
     
