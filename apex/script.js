@@ -1,5 +1,4 @@
 
-    initAnimations();
     initClimateData();
     initCarbonCalculator();
     initEnergySimulator();
