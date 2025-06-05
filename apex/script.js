@@ -1,12 +1,4 @@
-
-            particles.fty})`;
-                ctx.fill();
-                
-                // Update position
-                particle.x += particle.speedX;
-                particle.y += particle.speedY;
-                
-                // Reset particles that go off screen
+screen
                 if (particle.x < 0 || particle.x > canvas.width || 
                     particle.y < 0 || particle.y > canvas.height) {
                     particle.x = Math.random() * canvas.width;
