@@ -1,13 +1,4 @@
-screen
-         
-        // Handle resize
-        window.
-
-function initClimateData() {
-    // Fetch real climate data from API
-    async function fetchRealClimateData() {
-        try {
-            // First try a real API
+ API
             const response = await fetch('https://global-warming.org/api/co2-api');
             if (response.ok) {
                 const data = await response.json();
