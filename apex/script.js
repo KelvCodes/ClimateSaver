@@ -1,5 +1,4 @@
 
-    initChallengeSystem();
     initEventFinder();
     initLeaderboard();
     initTipsSystem();
