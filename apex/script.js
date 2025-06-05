@@ -1,8 +1,4 @@
 
-        });
-    });
-}
-
 function initParticleCanvas() {
     const canvas = document.createElement('canvas');
     canvas.id = 'particle-canvas';
