@@ -1,9 +1,4 @@
-tton",
-        }, "-=0.4");
-    }
-
-    // Particle animation with canvas for better performance
-    initParticleCanvas();
+rticleCanvas();
     
     // Parallax effect with scroll trigger
     gsap.to(".landing-content", {
