@@ -1,13 +1,5 @@
 screen
-                if (particle.x < 0 || particle.x > canvas.width || 
-                    parti
-            });
-            
-            requestAnimationFrame(animateParticles);
-        }
-        
-        animateParticles();
-        
+         
         // Handle resize
         window.addEventListener('resize', () => {
             canvas.width = container.offsetWidth;
