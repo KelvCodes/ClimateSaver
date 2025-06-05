@@ -1,6 +1,4 @@
 
-            stagger: 0.04
-        })
         .from(".landing p", {
             y: 40,
             opacity: 0,
