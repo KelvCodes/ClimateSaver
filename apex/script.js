@@ -1,8 +1,4 @@
 
-
-// ======================
-
-function initAnimations() {
     // Enhanced landing page animations with GSAP for smoother performance
     gsap.registerPlugin(ScrollTrigger);
     
