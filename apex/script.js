@@ -1,7 +1,6 @@
 
 
-    initCarbonCalculator();
-    initEnergySimulator();
+    ini
     initRecipeGenerator();
     initChallengeSystem();
     initEventFinder();
