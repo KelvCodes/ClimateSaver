@@ -1,7 +1,4 @@
 
-    canvas.style.height = '100%';
-    canvas.style.pointerEvents = 'none';
-    canvas.style.zIndex = '1';
     
     const container = document.querySelector('.landing');
     if (container) {
