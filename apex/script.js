@@ -1,9 +1,6 @@
 
         canvas.height = container.offsetHeight;
         
-        const isMobile = window.innerWidth <= 768;
-        const particleCount = isMobile ? 30 : 80;
-        const particles = [];
         
         // Create particles
         for (let i = 0; i < particleCount; i++) {
