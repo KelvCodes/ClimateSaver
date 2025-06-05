@@ -1,4 +1,4 @@
-EventListener('DOMContentLoaded', () => {
+ => {
     // Initialize all components
     initAnimations();
     initClimateData();
