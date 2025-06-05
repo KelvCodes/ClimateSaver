@@ -1,5 +1,4 @@
 
-    initEventFinder();
     initLeaderboard();
     initTipsSystem();
     initAccessibility();
