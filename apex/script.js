@@ -1,6 +1,5 @@
 
-        gsap.timeline({
-            defaults: { ease: "power3.out" }
+        g
         })
         .from(".landing .letter", {
             y: 80,
