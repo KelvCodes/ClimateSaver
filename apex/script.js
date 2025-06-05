@@ -1,8 +1,5 @@
 
-});
 
-// ======================
-// INITIALIZATION FUNCTIONS
 // ======================
 
 function initAnimations() {
