@@ -1,8 +1,4 @@
 
-        g
-        })
-        .from(".landing .letter", {
-            y: 80,
             opacity: 0,
             duration: 1,
             stagger: 0.04
