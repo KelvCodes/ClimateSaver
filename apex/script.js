@@ -1,7 +1,4 @@
 
-    
-    // Split text for animation
-    const title = document.querySelector('.landing h1');
     if (title) {
         title.innerHTML = title.textContent.replace(/\S/g, '<span class="letter">$&</span>');
         
