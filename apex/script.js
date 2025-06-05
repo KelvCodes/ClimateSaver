@@ -1,7 +1,5 @@
 
-            duration: 1,
-            scrollTrigger: {
-                trigger: section,
+       
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
