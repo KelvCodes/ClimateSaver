@@ -1,6 +1,4 @@
 
-        const ctx = canvas.getContext('2d');
-        canvas.width = container.offsetWidth;
         canvas.height = container.offsetHeight;
         
         const isMobile = window.innerWidth <= 768;
