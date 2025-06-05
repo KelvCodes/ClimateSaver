@@ -1,11 +1,5 @@
 
-            trigger: ".landing",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-    
+      
     // Animate sections on scroll
     gsap.utils.toArray(".section").forEach(section => {
         gsap.from(section, {
