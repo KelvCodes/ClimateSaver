@@ -1,7 +1,4 @@
-
-      this.setupLandingAnimations();
-      this.initParticleCanvas();
-      this.setupScrollAnimations();
+;
     }
   }
 
