@@ -1,5 +1,4 @@
 
-  constructor() {
     this.currentChallenge = null;
     this.challengeDaysCompleted = 0;
     this.leaderboard = [];
