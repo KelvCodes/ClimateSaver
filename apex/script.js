@@ -1,5 +1,4 @@
-// Eco-Friendly Web Application - Alternative Implementation
-class EcoApp {
+
   constructor() {
     this.currentChallenge = null;
     this.challengeDaysCompleted = 0;
