@@ -1,8 +1,4 @@
 
-
-  initAnimations() {
-    if (typeof gsap !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
       this.setupLandingAnimations();
       this.initParticleCanvas();
       this.setupScrollAnimations();
