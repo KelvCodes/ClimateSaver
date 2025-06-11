@@ -1,8 +1,4 @@
 
-
-    const canvas = document.createElement('canvas');
-    canvas.id = 'particle-canvas';
-    Object.assign(canvas.style, {
       position: 'absolute',
       top: '0',
       left: '0',
