@@ -1,6 +1,5 @@
 
-        carbonScore: "Low",
-        prepTime: "30 mins",
+        carbo
         image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
         instructions: "1. Sauté onions and garlic. 2. Add lentils and tomatoes. 3. Simmer for 20 mins. 4. Add spinach and coconut milk at the end."
       },
