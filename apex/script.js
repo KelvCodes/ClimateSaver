@@ -1,6 +1,5 @@
 
-        instructions: "1. Sauté onions and garlic. 2. Add lentils and tomatoes. 3. Simmer for 20 mins. 4. Add spinach and coconut milk at the end."
-      },
+        instructions: "1. Sauté onions and garlic. 2. Add      },
       // ... other recipes
     ];
     this.mockEvents = [
