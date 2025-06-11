@@ -1,10 +1,5 @@
 
-   
-        duration: 0.8
-      }, "-=0.6")
-      .from(".cta-button", {
-        scale: 0,
-        opacity: 0,
+
         rotate: 10,
         duration: 0.6
       }, "-=0.4");
