@@ -1,9 +1,4 @@
-
-        particle.x += particle.speedX;
-        particle.y += particle.speedY;
-        
-        if (particle.x < 0 || particle.x > canvas.width || 
-            particle.y < 0 || particle.y > canvas.height) {
+ particle.y > canvas.height) {
           particle.x = Math.random() * canvas.width;
           particle.y = Math.random() * canvas.height;
         }
