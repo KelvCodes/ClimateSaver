@@ -2,7 +2,6 @@
 
   }
 
-  init() {
     document.addEventListener('DOMContentLoaded', () => {
       this.setupComponents();
       this.setupPeriodicUpdates();
