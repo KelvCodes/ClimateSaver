@@ -1,5 +1,4 @@
-      speedX: Math.random() * 1 - 0.5,
-      speedY: Math.random() * 1 - 0.5,
+
       opacity: Math.random() * 0.6 + 0.2
     }));
 
