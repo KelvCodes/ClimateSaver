@@ -1,10 +1,5 @@
 
 
-
-  initParticleCanvas() {
-    const container = document.querySelector('.landing');
-    if (!container) return;
-
     const canvas = document.createElement('canvas');
     canvas.id = 'particle-canvas';
     Object.assign(canvas.style, {
