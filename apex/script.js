@@ -1,10 +1,6 @@
 
 
 
-
-    this.initChallengeSystem();
-    this.initEventFinder();
-    this.initLeaderboard();
     this.initTipsSystem();
     this.initAccessibility();
   }
