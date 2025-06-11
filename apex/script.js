@@ -1,7 +1,4 @@
 
-      gsap.timeline({
-        defaults: { ease: "power3.out" }
-      })
       .from(".landing .letter", {
         y: 80,
         opacity: 0,
