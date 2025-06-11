@@ -1,8 +1,5 @@
 
 
-    canvas.width = container.offsetWidth;
-    canvas.height = container.offsetHeight;
-
     const particleCount = window.innerWidth <= 768 ? 30 : 80;
     const particles = Array.from({ length: particleCount }, () => ({
       x: Math.random() * canvas.width,
