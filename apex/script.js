@@ -1,5 +1,5 @@
 
-        instructions: "1. Sauté onions and garlic. 2. Add      },
+        
       // ... other recipes
     ];
     this.mockEvents = [
