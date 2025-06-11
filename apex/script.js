@@ -1,7 +1,6 @@
 
         
-      // ... other recipes
-    ];
+
     this.mockEvents = [
       { location: "new york", name: "Central Park Tree Planting", date: "2025-05-10", type: "Tree Planting" },
       // ... other events
