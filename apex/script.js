@@ -1,10 +1,5 @@
 
 
-        rotate: 10,
-        duration: 0.6
-      }, "-=0.4");
-    }
-  }
 
   initParticleCanvas() {
     const container = document.querySelector('.landing');
