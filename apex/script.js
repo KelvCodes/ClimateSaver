@@ -1,10 +1,5 @@
 
 
-
-    this.initTipsSystem();
-    this.initAccessibility();
-  }
-
   initAnimations() {
     if (typeof gsap !== 'undefined') {
       gsap.registerPlugin(ScrollTrigger);
