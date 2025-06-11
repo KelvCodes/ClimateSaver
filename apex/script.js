@@ -1,6 +1,4 @@
 
-    this.challengeDaysCompleted = 0;
-    this.leaderboard = [];
     this.tips = [
       {
         title: "Unplug devices",
