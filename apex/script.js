@@ -1,8 +1,4 @@
-
-      position: 'absolute',
-      top: '0',
-      left: '0',
-      width: '100%',
+00%',
       height: '100%',
       pointerEvents: 'none',
       zIndex: '1'
