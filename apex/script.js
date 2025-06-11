@@ -1,9 +1,7 @@
 
 
 
-();
-    this.initEnergySimulator();
-    this.initRecipeGenerator();
+
     this.initChallengeSystem();
     this.initEventFinder();
     this.initLeaderboard();
