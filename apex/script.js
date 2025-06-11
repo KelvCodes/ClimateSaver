@@ -1,9 +1,4 @@
-
-      opacity: Math.random() * 0.6 + 0.2
-    }));
-
-    const animateParticles = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+h, canvas.height);
       
       particles.forEach(particle => {
         ctx.beginPath();
