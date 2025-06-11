@@ -1,7 +1,5 @@
 
-        title: "Unplug devices",
-        content: "Phantom energy from devices on standby can account for 5-10% of home energy use."
-      },
+
       // ... other tips
     ];
     this.recipes = [
