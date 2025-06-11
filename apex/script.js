@@ -1,6 +1,5 @@
 
-      // ... other events
-    ];
+
   }
 
   init() {
