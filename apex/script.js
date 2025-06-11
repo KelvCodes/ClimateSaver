@@ -1,7 +1,5 @@
 
 
-    container.appendChild(canvas);
-    const ctx = canvas.getContext('2d');
     canvas.width = container.offsetWidth;
     canvas.height = container.offsetHeight;
 
