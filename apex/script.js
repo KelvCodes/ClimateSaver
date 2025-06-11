@@ -1,8 +1,4 @@
-00%',
-      height: '100%',
-      pointerEvents: 'none',
-      zIndex: '1'
-    });
+
 
     container.appendChild(canvas);
     const ctx = canvas.getContext('2d');
