@@ -1,11 +1,7 @@
 
 
 
-
-  setupComponents() {
-    this.initAnimations();
-    this.initClimateData();
-    this.initCarbonCalculator();
+();
     this.initEnergySimulator();
     this.initRecipeGenerator();
     this.initChallengeSystem();
