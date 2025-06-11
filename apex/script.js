@@ -1,8 +1,4 @@
-;
 
-    if (title) {
-      title.innerHTML = title.textContent.replace(/\S/g, '<span class="letter">$&</span>');
-      
       gsap.timeline({
         defaults: { ease: "power3.out" }
       })
