@@ -1,9 +1,6 @@
 
 
-  }
-      this.setupPeriodicUpdates();
-    });
-  }
+
 
   setupComponents() {
     this.initAnimations();
