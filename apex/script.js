@@ -1,5 +1,4 @@
 
-        dietary: ["vegan", "glutenFree"],
         carbonScore: "Low",
         prepTime: "30 mins",
         image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
