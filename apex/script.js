@@ -1,13 +1,4 @@
- particle.y > canvas.height) {
-          particle.x = Math.random() * canvas.width;
-          particle.y = Math.random() * canvas.height;
-        }
-      });
-      
-      requestAnimationFrame(animateParticles);
-    };
-    
-    animateParticles();
+
     
     window.addEventListener('resize', () => {
       canvas.width = container.offsetWidth;
