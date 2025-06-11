@@ -1,5 +1,5 @@
 
-        name: "Lentil & Vegetable Curry",
+        
         ingredients: ["lentils", "tomatoes", "onions", "garlic", "spinach", "coconut milk"],
         dietary: ["vegan", "glutenFree"],
         carbonScore: "Low",
